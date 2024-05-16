@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height: 50px;
+            width: 70px;
+            border: 1px solid yellowgreen;
+            background-color: yellowgreen;
+            font-size: 20px;
+            color: aliceblue;
+            border-radius: 10px;
+            animation-name: move;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            
+        }
+        h1,div{
+            margin-left: 10px;
+        }
+        @keyframes move{
+            0%{
+                transform: translateX(0px) rotate(0deg);
+            }
+            15%{
+                transform: translateX(500px) rotate(360deg);
+            }
+            17%{
+                transform:translateX(480px)  rotate(370deg);
+            }
+            35%{
+                transform: translateX(0px) rotate(360deg);
+            }
+            50%{
+                transform: translateX(500px) rotate(350deg);
+            }
+            70%{
+                transform: translateX(0px) rotate(360deg);
+            }
+            85%{
+                transform: translateX(500px) rotate(370deg);
+            }
+            100%{
+                transform: translate(0px) rotate(0deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Hello this is testing</h1>
+    <div>
+        <button>CSS</button>
+    </div>
+</body>
+</html>
